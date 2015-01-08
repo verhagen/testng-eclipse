@@ -29,13 +29,15 @@ be found in the ```strprotocol``` package.
 The plug-in understands two system properties, which you can define as
 VM arguments in the launch dialog:
 
-```-Dtestng.eclipse.verbose
+```
+-Dtestng.eclipse.verbose
 ``` 
 
 This will cause both the Eclipse client and RemoteTestNG to issue a
 more verbose output.
 
-```-Dtestng.eclipse.debug
+```
+-Dtestng.eclipse.debug
 ```
 
 Use this flag if you need to debug and break into RemoteTestNG. In
@@ -66,10 +68,12 @@ Whenever a new message is received, AbstractRemoteTestRunnerClient
 looks up the type of the message and then calls the subclass's
 corresponding method:
 
-```SUITE -> notifyStart(GenericMessage)
+```
+SUITE -> notifyStart(GenericMessage)
 TEST -> notifySuiteEvents(SuiteMessage)
 TEST_RESULT -> notifyTestEvents(TestMessage)
-other -> notifyResultEvents(TestResultMessage)```
+other -> notifyResultEvents(TestResultMessage)
+```
 
 RemoteTestNG starts by opening a connection to the port passed on the
 command line and when it succeeds, runs the suites and uses listeners
