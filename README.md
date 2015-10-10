@@ -1,7 +1,28 @@
-# User
+# User documentation
 
 The documentation for this plug-in can be found at http://testng.org/doc/eclipse.html
 
+# Build
+
+## Version number
+
+Set the version number with `scripts/set-version`, e.g.:
+
+```
+scripts/set-version 6.8.22-SNAPSHOT
+```
+
+Using `SNAPSHOT` version numbers will generate UTC timestamped plugin-numbers, e.g. 6.8.22.201505030200 so you should only increase the version number if you are including a higher version of `testng.jar`.
+
+## Building
+
+Once the version is correct, build the Eclipse plug-in as follows:
+
+```
+mvn -e clean package
+```
+
+The update site package will be generated at `testng-eclipse-update-site/target/site.zip`
 
 # Developer
 
