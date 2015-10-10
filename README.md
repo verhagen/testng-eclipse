@@ -1,6 +1,34 @@
+# Installation
+
+
+## Eclipse Marketplace
+
+The latest release can be found in the [Eclipse Market Place](http://marketplace.eclipse.org/content/testng-eclipse)
+
+
+### Installation Steps
+
+- Open Eclipse menu: _Help -> Eclipse Marketplace..._
+- The dialog _Eclipse Marketplace_ opens
+- _Now the latest plug-in details are loaded from the internet. It can take some time._
+- Enter in the text field _Find_ the word __testng__
+- Press the button _Go_
+- Once TestNG appears in the main screen, press the button _Install_
+- Follow the installation steps that follow.
+
+![Eclipse Marketplace - TestNG Plug-in](src/documentation/image/eclipse-marketplace-testng.tiff)
+
+## Eclipse Update Site
+
+The latest release can be found through Eclipse update site http://beust.com/eclipse.
+
+__WARNING__ The update site, is not a human readable page, it just contains the _TestNG Plug-in for Eclipse_ content.
+
+
 # User documentation
 
 The documentation for this plug-in can be found at http://testng.org/doc/eclipse.html
+
 
 # Build
 
